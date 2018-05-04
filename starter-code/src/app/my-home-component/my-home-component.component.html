@@ -1,0 +1,17 @@
+<h2>List of Movies</h2>
+
+
+<div class="container">
+  <div class="row">
+      <div *ngFor="let oneMovie of movieBlah.movieList " class="card" style="width:200px" >
+          <p class="card-text"> ROOM: {{oneMovie.room}}</p>          
+          <img class="card-img-top" width="200px" src={{oneMovie.poster}} alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{oneMovie.title}}</h5>
+            <!-- <button (click)="movieBlah.getMovie(oneMovie.id)" class="btn btn-primary">Movie Details</button> -->
+            <a class="btn btn-primary" routerLink="/movie/{{oneMovie.id}}">Movie Details</a>
+            
+          </div>
+        </div>
+  </div>
+</div>

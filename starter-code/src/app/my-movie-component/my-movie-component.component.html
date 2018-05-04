@@ -1,0 +1,32 @@
+<!-- <div class="container">
+    <div class="row">
+        <div *ngFor=" " class="card" style="width:200px" >
+            <p class="card-text"> ROOM: {{oneMovie.room}}</p>          
+            <img class="card-img-top" width="200px" src={{oneMovie.poster}} alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{oneMovie.title}}</h5>
+              <!-- <button (click)="movieBlah.getMovie(oneMovie.id)" class="btn btn-primary">M</button>x   -->
+            <!-- </div>
+          </div>
+    </div>
+  </div> --> 
+
+  <div class="image">
+    <h4> Room: {{movieInfo?.room}}  {{movieInfo?.title}} </h4>
+    
+    <img src ={{movieInfo?.poster}} width="300px" alt="">
+  </div>
+
+  <div class="info">
+    <p><b>Genres:</b>  {{movieInfo?.genres}}</p>
+    <p><b>Year: </b> {{movieInfo?.year}}</p>
+    <p><b>Director:</b> {{movieInfo?.director}}</p>
+    <p><b>Actors:</b> {{movieInfo?.actors}}</p>
+    <p><b>Schedule:</b> {{movieInfo?.hours}}</p>
+    <p><b>Synopsis:</b> <br> {{movieInfo?.synopsis}}</p>
+    <a class="btn btn-danger lstBtn" routerLink="/home">Home</a>
+  </div>
+
+  
+
+

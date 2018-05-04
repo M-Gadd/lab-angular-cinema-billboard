@@ -1,0 +1,15 @@
+.image{
+  width: 300px;
+  float: left;
+  margin: 20px;
+}
+
+.info{
+  width: 400px;
+  float: left;
+  margin-top: 60px;
+}
+
+.lstBtn{
+ margin: 40px 150px;
+}
